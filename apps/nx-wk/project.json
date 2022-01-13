@@ -38,31 +38,12 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/web:dev-server",
+      "executor": "nx-plugin-vite:serve",
       "options": {
-        "buildTarget": "nx-wk:build",
-        "hmr": true
-      },
-      "configurations": {
-        "production": {
-          "buildTarget": "nx-wk:build:production",
-          "hmr": false
-        }
-      }
-    },
-    "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["apps/nx-wk/**/*.{ts,tsx,js,jsx}"]
-      }
-    },
-    "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/nx-wk"],
-      "options": {
-        "jestConfig": "apps/nx-wk/jest.config.js",
-        "passWithNoTests": true
+        "configFile": "apps/nx-wk/tsconfig.json",
+        "port": 3000,
+        "host": false,
+        "https": false
       }
     }
   },

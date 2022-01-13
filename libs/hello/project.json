@@ -1,0 +1,10 @@
+{
+  "root": "libs/hello",
+  "type": "library",
+  "sourceRoot": "libs/hello/src",
+  "projectType": "library",
+  "targets": {
+    
+  },
+  "tags": []
+}

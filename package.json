@@ -9,6 +9,7 @@
   },
   "private": true,
   "dependencies": {
+    "@vitejs/plugin-react-refresh": "^1.3.6",
     "core-js": "^3.6.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -17,15 +18,17 @@
     "tslib": "^2.0.0"
   },
   "devDependencies": {
+    "@angular-devkit/schematics": "^13.1.3",
     "@nrwl/cli": "13.4.4",
     "@nrwl/cypress": "13.4.4",
     "@nrwl/eslint-plugin-nx": "13.4.4",
     "@nrwl/jest": "13.4.4",
     "@nrwl/linter": "13.4.4",
+    "@nrwl/node": "^13.4.4",
     "@nrwl/react": "13.4.4",
-    "@nrwl/tao": "13.4.4",
+    "@nrwl/tao": "^13.4.4",
     "@nrwl/web": "13.4.4",
-    "@nrwl/workspace": "13.4.4",
+    "@nrwl/workspace": "^13.4.4",
     "@testing-library/react": "12.1.2",
     "@testing-library/react-hooks": "7.0.2",
     "@types/jest": "27.0.2",
@@ -34,6 +37,7 @@
     "@types/react-dom": "17.0.9",
     "@typescript-eslint/eslint-plugin": "~5.3.0",
     "@typescript-eslint/parser": "~5.3.0",
+    "@vitejs/plugin-react": "^1.1.4",
     "cypress": "^9.1.0",
     "eslint": "8.2.0",
     "eslint-config-prettier": "8.1.0",
@@ -43,9 +47,13 @@
     "eslint-plugin-react": "7.27.0",
     "eslint-plugin-react-hooks": "4.2.0",
     "jest": "27.2.3",
+    "nx-plugin-vite": "^1.3.1",
     "prettier": "^2.3.1",
     "react-test-renderer": "17.0.2",
     "ts-jest": "27.0.5",
-    "typescript": "~4.4.3"
+    "typescript": "~4.4.3",
+    "vite": "^2.7.10",
+    "vite-plugin-externals": "^0.3.2",
+    "vite-tsconfig-paths": "^3.3.17"
   }
 }
