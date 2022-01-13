@@ -1,0 +1,28 @@
+{
+  "root": "apps/nx-wk-e2e",
+  "sourceRoot": "apps/nx-wk-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/nx-wk-e2e/cypress.json",
+        "devServerTarget": "nx-wk:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "nx-wk:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/nx-wk-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["nx-wk"]
+}
