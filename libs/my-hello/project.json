@@ -1,0 +1,23 @@
+{
+  "root": "libs/my-hello",
+  "sourceRoot": "libs/my-hello/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/my-hello/**/*.{ts,js}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/my-hello"],
+      "options": {
+        "jestConfig": "libs/my-hello/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
 import * as React from "react";
 
-export const Hello = () => {
+export const Truc = () => {
 
     return (
-      <div>Hello</div>
+      <div>truc</div>
     );
   };

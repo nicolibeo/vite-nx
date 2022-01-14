@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@hello": ["libs/hello/src/index.ts"]
+      "@nx-wk/my-hello": ["libs/my-hello/src/index.ts"],
+      "@nx-wk/my-lib": ["libs/my-lib/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

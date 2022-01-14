@@ -1,7 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "nx-wk": "apps/nx-wk",
-    "hello": "libs/hello"
+    "my-hello": "libs/my-hello",
+    "my-lib": "libs/my-lib",
+    "nx-wk": "apps/nx-wk"
   }
 }
